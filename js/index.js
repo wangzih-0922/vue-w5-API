@@ -135,6 +135,7 @@ const app = Vue.createApp({
                 .then((res) => {
                     alert(res.data.message);
                     //建議使用veevalidate提供的清空欄位設定，用一般方式會在觸發一次驗證，以致會出現error messages
+                    this.getCartList();
                     this.$refs.form.resetForm();
 
                 })
